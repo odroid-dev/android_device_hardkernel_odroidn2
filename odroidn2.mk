@@ -88,7 +88,6 @@ TARGET_KERNEL_BUILT_FROM_SOURCE := true
 
 PRODUCT_TYPE := mbox
 
-BOARD_AML_TDK_KEY_PATH := device/hardkernel/common/tdk_keys/
 WITH_LIBPLAYER_MODULE := false
 
 OTA_UP_PART_NUM_CHANGED := false

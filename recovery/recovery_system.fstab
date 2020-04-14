@@ -11,7 +11,6 @@
 /dev/block/param        /param    ext4    defaults    defaults
 /dev/block/product      /product    ext4    defaults    defaults
 /dev/block/metadata     /metadata    ext4    defaults    defaults
-/dev/block/tee          /tee    ext4    defaults    defaults
 /dev/block/cache        /cache  ext4    defaults    defaults
 /dev/block/data         /data   ext4    defaults    encryptable=footer
 /dev/block/mmcblk1p1    /sdcard vfat    defaults    defaults
