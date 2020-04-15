@@ -438,4 +438,3 @@ endif
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/files/hardkernel-720.bmp.gz:$(PRODUCT_OUT)/hardkernel-720.bmp.gz
 
-$(call inherit-product, device/hardkernel/proprietary/proprietary.mk)
