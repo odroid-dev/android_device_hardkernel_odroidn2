@@ -39,7 +39,7 @@ BOARD_INSTALL_VULKAN := true
 $(call inherit-product, device/hardkernel/$(PRODUCT_DIR)/vendor_prop.mk)
 $(call inherit-product, device/hardkernel/common/products/mbox/product_mbox.mk)
 $(call inherit-product, device/hardkernel/$(PRODUCT_DIR)/device.mk)
-$(call inherit-product-if-exists, vendor/google/products/gms.mk)
+
 #########################################################################
 #
 #                                               Media extension
