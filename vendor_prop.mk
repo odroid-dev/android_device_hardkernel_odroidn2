@@ -36,7 +36,7 @@ PRODUCT_PROPERTY_OVERRIDES +=  \
 
 #if wifi Only
 PRODUCT_PROPERTY_OVERRIDES +=  \
-    ro.radio.noril=false
+    ro.radio.noril=true
 
 #if need pppoe
 PRODUCT_PROPERTY_OVERRIDES +=  \
