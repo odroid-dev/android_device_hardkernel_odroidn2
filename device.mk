@@ -101,17 +101,22 @@ PRODUCT_COPY_FILES += \
     device/hardkernel/common/Generic.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/Generic.kl
 endif
 
+ifeq ($(TARGET_BUILD_GOOGLE_ATV),true)
+PRODUCT_AAPT_CONFIG := normal large xlarge tvdpi hdpi xhdpi xxhdpi
+PRODUCT_AAPT_PREF_CONFIG := tvdpi
+PRODUCT_CHARACTERISTICS := tv
+else
 PRODUCT_AAPT_CONFIG := xlarge hdpi xhdpi
 PRODUCT_AAPT_PREF_CONFIG := hdpi
-
 PRODUCT_CHARACTERISTICS := tablet
+endif
 
 ifneq ($(TARGET_BUILD_GOOGLE_ATV), true)
 DEVICE_PACKAGE_OVERLAYS := \
     device/hardkernel/$(PRODUCT_DIR)/overlay
 endif
-PRODUCT_TAGS += dalvik.gc.type-precise
 
+PRODUCT_TAGS += dalvik.gc.type-precise
 
 # setup dalvik vm configs.
 $(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
