@@ -8,4 +8,4 @@
 /dev/block/odm          /odm    vfat    defaults    defaults
 /dev/block/product      /product    ext4    defaults    defaults
 /dev/block/cache        /cache  ext4    defaults    defaults
-/dev/block/data         /data   ext4    defaults    defaults
+/dev/block/data         /data   f2fs    defaults    defaults
