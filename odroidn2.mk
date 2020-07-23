@@ -67,9 +67,6 @@ TARGET_FIRMWARE_DTSI := firmware_normal.dtsi
 
 # WiFi
 WIFI_MODULE := multiwifi
-ifeq ($(USE_AML_WIFI), true)
-include hardware/amlogic/wifi/configs/wifi.mk
-else
 include device/hardkernel/common/wifi.mk
 # Change this to match target country
 # 11 North America; 14 Japan; 13 rest of world
