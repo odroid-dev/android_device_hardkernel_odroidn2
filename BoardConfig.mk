@@ -134,7 +134,7 @@ TARGET_RECOVERY_UI_LIB += \
     libsystemcontrol_static
 TARGET_RECOVERY_UPDATER_LIBS := libinstall_amlogic
 TARGET_RECOVERY_UPDATER_EXTRA_LIBS += libenv libsystemcontrol_static libsecurity libfdt
-TARGET_RECOVERY_FSTAB := device/hardkernel/odroidc4/recovery/recovery.fstab
+TARGET_RECOVERY_FSTAB := device/hardkernel/odroidn2/recovery/recovery.fstab
 
 include device/hardkernel/common/sepolicy.mk
 #MALLOC_IMPL := dlmalloc
