@@ -114,10 +114,6 @@ PRODUCT_PACKAGES += \
 
 include device/hardkernel/common/gpu/gondul-user-arm64.mk
 
-# Busybox
-PRODUCT_PACKAGES += \
-    static_busybox
-
 # Updater
 PRODUCT_PACKAGES += updater
 

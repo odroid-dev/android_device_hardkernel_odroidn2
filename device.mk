@@ -84,10 +84,6 @@ PRODUCT_COPY_FILES += \
     device/hardkernel/odroidn2/files/remote.tab3:recovery/root/etc/remote.tab3 \
     device/hardkernel/odroidn2/recovery/sh:recovery/root/sbin/sh
 
-# Copy Static Busybox
-PRODUCT_COPY_FILES += \
-    device/hardkernel/odroidn2/files/busybox:recovery/root/sbin/busybox
-
 # remote IME config file
 PRODUCT_COPY_FILES += \
     device/hardkernel/common/products/mbox/Vendor_0001_Product_0001.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/Vendor_0001_Product_0001.kl \
