@@ -45,8 +45,8 @@ run_program("/sbin/cp", "/vendor/etc/env.ini.template", "/sdcard/env.ini");
 
 set_progress(0.8000);
 
-ui_print("    Change CPU Clock for N2 plus...");
-run_program("sbin/sh", "/sbin/change_cpufreq.sh");
+ui_print("    Change CPU Clock for ODROID-N2Plus...");
+run_program("/sbin/sh", "/sbin/change_cpufreq.sh");
 
 unmount("/vendor");
 unmount("/sdcard");
