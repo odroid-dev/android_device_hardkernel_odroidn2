@@ -39,7 +39,9 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     device/hardkernel/odroidn2/files/media_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles.xml \
-    device/hardkernel/odroidn2/files/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
+    device/hardkernel/odroidn2/files/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/media_profiles_V1_0.xml \
+    device/hardkernel/odroidn2/files/media_profiles_V1_0_hevc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0_hevc.xml \
+    device/hardkernel/odroidn2/files/media_profiles_V1_0_h264.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0_h264.xml \
     device/hardkernel/odroidn2/files/audio_effects.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.conf \
     device/hardkernel/odroidn2/files/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
     device/hardkernel/odroidn2/files/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml \
