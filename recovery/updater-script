@@ -24,8 +24,8 @@ write_sparse_image("vendor.img", "vendor", "/dev/block/vendor");
 
 set_progress(0.4000);
 
-ui_print("   formatting /dev/block/data for f2fs partition");
-run_program("/sbin/mkfs.f2fs", "-l", "data", "/dev/block/data");
+ui_print("   formatting /dev/block/data for ext4 partition");
+run_program("/sbin/mk_e2fs", "-F", "-t", "ext4", "/dev/block/data", "-L", "data");
 
 set_progress(0.5000);
 
