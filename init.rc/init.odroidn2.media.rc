@@ -23,3 +23,9 @@ on fs
 	insmod /vendor/lib/modules/amvdec_avs2.ko
 	insmod /vendor/lib/modules/encoder.ko
 	insmod /vendor/lib/modules/vpu.ko
+	insmod /vendor/lib/modules/amvdec_mavs.ko
+
+	setprop media.metadataretriver.disable-8k true
+	# make sure mediadrm for drm use
+	mkdir /data/vendor/mediadrm 0770 media mediadrm
+
